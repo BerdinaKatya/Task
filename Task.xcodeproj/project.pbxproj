@@ -14,6 +14,8 @@
 		64CF85542B5FDBBE00260BB0 /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64CF85522B5FDBBE00260BB0 /* Task.xcdatamodeld */; };
 		64CF85562B5FDBC000260BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CF85552B5FDBC000260BB0 /* Assets.xcassets */; };
 		64CF85592B5FDBC000260BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CF85572B5FDBC000260BB0 /* LaunchScreen.storyboard */; };
+		64CF85612B5FE48D00260BB0 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CF85602B5FE48D00260BB0 /* NewTaskViewController.swift */; };
+		64CF85632B5FE4AE00260BB0 /* TaskInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CF85622B5FE4AE00260BB0 /* TaskInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		64CF85552B5FDBC000260BB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64CF85582B5FDBC000260BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64CF855A2B5FDBC000260BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64CF85602B5FE48D00260BB0 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		64CF85622B5FE4AE00260BB0 /* TaskInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				64CF85492B5FDBBE00260BB0 /* AppDelegate.swift */,
 				64CF854B2B5FDBBE00260BB0 /* SceneDelegate.swift */,
 				64CF854D2B5FDBBE00260BB0 /* ViewController.swift */,
+				64CF85602B5FE48D00260BB0 /* NewTaskViewController.swift */,
+				64CF85622B5FE4AE00260BB0 /* TaskInfoViewController.swift */,
 				64CF854F2B5FDBBE00260BB0 /* Main.storyboard */,
 				64CF85552B5FDBC000260BB0 /* Assets.xcassets */,
 				64CF85572B5FDBC000260BB0 /* LaunchScreen.storyboard */,
@@ -142,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64CF85542B5FDBBE00260BB0 /* Task.xcdatamodeld in Sources */,
+				64CF85632B5FE4AE00260BB0 /* TaskInfoViewController.swift in Sources */,
+				64CF85612B5FE48D00260BB0 /* NewTaskViewController.swift in Sources */,
 				64CF854E2B5FDBBE00260BB0 /* ViewController.swift in Sources */,
 				64CF854A2B5FDBBE00260BB0 /* AppDelegate.swift in Sources */,
 				64CF854C2B5FDBBE00260BB0 /* SceneDelegate.swift in Sources */,

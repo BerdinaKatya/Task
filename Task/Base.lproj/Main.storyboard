@@ -44,6 +44,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Add" id="1Ws-vI-OHy">
                             <connections>
                                 <action selector="didTapAdd:" destination="BYZ-38-t0r" id="ncG-ST-ar2"/>
+                                <segue destination="UYD-7m-8X5" kind="show" id="bcS-fY-XMZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -55,16 +56,67 @@
             </objects>
             <point key="canvasLocation" x="1054.1984732824426" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--New Task View Controller-->
+        <scene sceneID="eAg-15-eEM">
+            <objects>
+                <viewController storyboardIdentifier="newTask" id="UYD-7m-8X5" customClass="NewTaskViewController" customModule="Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l74-D0-8eA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7L-Jk-Dz5">
+                                <rect key="frame" x="20" y="215" width="353" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="KGP-QK-mbg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="de9-dZ-naH"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="de9-dZ-naH" firstAttribute="trailing" secondItem="F7L-Jk-Dz5" secondAttribute="trailing" constant="20" id="A4A-Wm-IMT"/>
+                            <constraint firstItem="F7L-Jk-Dz5" firstAttribute="leading" secondItem="de9-dZ-naH" secondAttribute="leading" constant="20" id="CJM-Yt-vtK"/>
+                            <constraint firstItem="F7L-Jk-Dz5" firstAttribute="top" secondItem="de9-dZ-naH" secondAttribute="top" constant="60" id="hk7-1L-kHe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VVf-vl-FKH"/>
+                    <connections>
+                        <outlet property="newTaskTF" destination="F7L-Jk-Dz5" id="DYU-Jz-vSo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8e-Jo-MJ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053" y="678"/>
+        </scene>
+        <!--Task Info View Controller-->
         <scene sceneID="iHp-SC-cZy">
             <objects>
-                <viewController id="euv-eL-Q08" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="taskInfo" id="euv-eL-Q08" customClass="TaskInfoViewController" customModule="Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gmO-Jx-4Oz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwt-Tl-QqW">
+                                <rect key="frame" x="20" y="99" width="353" height="699"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ltf-WQ-jXu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ltf-WQ-jXu" firstAttribute="trailing" secondItem="Bwt-Tl-QqW" secondAttribute="trailing" constant="20" id="S0Q-Jd-Kuu"/>
+                            <constraint firstItem="Bwt-Tl-QqW" firstAttribute="leading" secondItem="ltf-WQ-jXu" secondAttribute="leading" constant="20" id="aPV-Nz-Xcl"/>
+                            <constraint firstItem="Bwt-Tl-QqW" firstAttribute="top" secondItem="ltf-WQ-jXu" secondAttribute="top" constant="40" id="h6h-Uj-pcd"/>
+                            <constraint firstItem="ltf-WQ-jXu" firstAttribute="bottom" secondItem="Bwt-Tl-QqW" secondAttribute="bottom" constant="20" id="nvA-Xh-SX0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="Bwt-Tl-QqW" id="mrx-2b-5XV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rh4-IW-TXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,6 +144,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
